@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Password Generator</title>
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<body>
+  <div class="container">
+    <p class="intro">This is a simple yet powerful Password generator by @codavidgarcia</p>
+    <h1 class="title">Create a safe password</h1>
+    <p>Just choose your desired outcome and we'll create a safe Password for you to copy and paste</p>
+    <p class="intro">Please keep it safe, it's random generated and not stored </p>
+ 
+
+    <input type="text" disabled class="password-display" id="passwordDisplay">
+    <form id="passwordGeneratorForm" class="form">
+      <div class="option">
+        <label for="characterAmountNumber">Number of characters</label>
+        <input type="range" min="10" max="100" id="characterAmountRange" value="10">
+        <input type="number" min="10" max="100" id="characterAmountNumber" value="10">
+      </div>
+      <div class="option">
+        <label for="includeUppercase">Include letters</label>
+        <input type="checkbox" id="includeLetters" name="letters">
+      </div>
+      <div class="option">
+        <label for="includeNumbers">Include numbers</label>
+        <input type="checkbox" id="includeNumbers" name="numbers">
+      </div>
+      <div class="option">
+        <label for="includeSymbols">Include symbols</label>
+        <input type="checkbox" id="includeSymbols" name="symbols">
+      </div>
+
+      <div class="btns-wraper">
+        <button type="submit" class="btn">Generate password</button>
+        <button type="button" class="btn" id="button-copy">Copy</button>
+      </div>
+    </form>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
